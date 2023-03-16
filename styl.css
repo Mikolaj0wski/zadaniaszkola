@@ -1,0 +1,436 @@
+*{
+    padding: 0;
+    border: 0;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99, 93, 93);
+    user-select: none;
+}
+
+.plan1{
+  display: flex;
+  justify-content: center;
+}
+
+.plan2{
+  display: flex;
+  justify-content: center;
+}
+
+p1{
+  position: relative;
+  left: 400px;
+  top: 80px;
+  font-size: 70px;
+  font-family: monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppin", sans-serif;
+  color: #30CFD0;
+}
+
+p2{
+  position: relative;
+  left: 400px;
+  top: 80px;
+  font-size: 70px;
+  font-family: monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppin", sans-serif;
+  color: #30CFD0;
+}
+
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  margin-top: 10px;
+  font-family: monospace;
+  font-weight: 700;
+  background-color: #30CFD0;
+  -webkit-text-stroke: 5px black;
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppin", sans-serif;
+}
+
+h1{
+  animation-name: zmiana-koloru;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zmiana-koloru {
+  0% {background-color: #30CFD0;}
+  50% {background-color: rgb(99, 93, 93);}
+  100% {background-color: #30CFD0;}
+}
+
+.article{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+.punkt1, .punkt2, .punkt3, .punkt4, .punkt5, .punkt6{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    position: relative;
+    animation: pop-up 5s ease-in-out;
+  }
+  
+.punkt1, .punkt2, .punkt3, .punkt4, .punkt5, .punkt6:hover {
+    animation: pop-up 5s ease-in-out;
+  }
+  
+  @keyframes pop-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+/*-------------------------------Content1*/
+
+.content1{
+  margin-top: 0px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.article .punkt1{
+  cursor: pointer; 
+}
+
+.article .content1 {
+  max-height: 0; 
+  max-width: 300px;
+  overflow: hidden; 
+  transition: max-height 0.5s ease-out; 
+}
+
+.article .punkt1:hover + .content1 {
+  max-height: 500px; 
+}
+
+/*-------------------------------Content2*/
+.content2{
+  margin-top: 0px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.article .punkt2{
+  cursor: pointer; 
+}
+
+.article .content2 {
+  max-height: 0; 
+  max-width: 300px;
+  overflow: hidden; 
+  transition: max-height 0.5s ease-out; 
+}
+
+.article .punkt2:hover + .content2 {
+  max-height: 500px; 
+}
+
+/*-------------------Content3*/
+.content3{
+  margin-top: 0px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.article .punkt3{
+  cursor: pointer; 
+}
+
+.article .content3{
+  max-height: 0; 
+  max-width: 300px;
+  overflow: hidden; 
+  transition: max-height 0.5s ease-out; 
+}
+
+.article .punkt3:hover + .content3{
+  max-height: 500px; 
+}
+
+/*----------------Content4*/
+.content4{
+  margin-top: 0px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.article .punkt4{
+  cursor: pointer; 
+}
+
+.article .content4{
+  max-height: 0; 
+  max-width: 300px;
+  overflow: hidden; 
+  transition: max-height 0.5s ease-out; 
+}
+
+.article .punkt4:hover + .content4{
+  max-height: 500px; 
+}
+
+/*-------------Content5*/
+.content5{
+  margin-top: 0px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.article .punkt5{
+  cursor: pointer; 
+}
+
+.article .content5{
+  max-height: 0; 
+  max-width: 300px;
+  overflow: hidden; 
+  transition: max-height 0.5s ease-out; 
+}
+
+.article .punkt5:hover + .content5{
+  max-height: 500px; 
+}
+
+/*--------------Content6*/
+.content6{
+  margin-top: 0px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.article .punkt6{
+  cursor: pointer; 
+}
+
+.article .content6{
+  max-height: 0; 
+  max-width: 300px;
+  overflow: hidden; 
+  transition: max-height 0.5s ease-out; 
+}
+
+.article .punkt6:hover + .content6{
+  max-height: 500px;
+}
+/*----------------------END*/
+
+.content1{
+  position: absolute;
+  top: 700px;
+  left: 700px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt1{
+  position: absolute;
+  top: 600px;
+  left: 700px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt1:hover{
+  color: #30CFD0;
+}
+
+.content2{
+  position: absolute;
+  top: 1870px;
+  left: 700px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt2{
+  position: absolute;
+  top: 1770px;
+  left: 700px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt2:hover{
+  color: #30CFD0;
+}
+
+.content3{
+  position: absolute;
+  top: 1870px;
+  left: 1820px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt3{
+  position: absolute;
+  top: 1770px;
+  left: 1820px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt3:hover{
+  color: #30CFD0;
+}
+
+.content4{
+  position: absolute;
+  top: 2780px;
+  left: 700px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt4{
+  position: absolute;
+  top: 2680px;
+  left: 700px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt4:hover{
+  color: #30CFD0;
+}
+
+.content5{
+  position: absolute;
+  top: 3950px;
+  left: 700px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt5{
+  position: absolute;
+  top: 3850px;
+  left: 700px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt5:hover{
+  color: #30CFD0;
+}
+
+.content6{
+  position: absolute;
+  top: 3950px;
+  left: 1820px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt6{
+  position: absolute;
+  top: 3850px;
+  left: 1820px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  font-family: monospace;
+}
+
+.punkt6:hover{
+  color: #30CFD0;
+}
+
+
+h4{
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  margin-top: 10px;
+  font-family: monospace;
+  font-weight: 700;
+  color: #30CFD0;
+  font-family: "Poppin", sans-serif;
+}
+
+.content7 {
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  font-family: monospace;
+  margin-bottom: 50px;
+}
+
+h3{
+  position: relative;
+  left: 200px;
+  top: 20px;
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+.text3{
+  position: relative;
+  left: 230px;
+  bottom: 10px;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+h3{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(100);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
